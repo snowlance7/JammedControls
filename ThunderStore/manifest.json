@@ -1,0 +1,9 @@
+{
+  "name": "JammedControls",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/snowlance7/JammedControls",
+  "description": "Restrict the teleporter buttons and/or lever to host only.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100"
+  ]
+}

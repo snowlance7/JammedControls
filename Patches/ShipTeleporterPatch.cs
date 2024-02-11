@@ -13,7 +13,7 @@ namespace JammedControls.Patches
     internal class ShipTeleporterPatch
     {
         [HarmonyPatch(typeof(ShipTeleporter), "PressTeleportButtonOnLocalClient")]
-        [HarmonyPostfix]
+        [HarmonyPrefix]
         private static bool PressTeleportButtonOnLocalClientPatch(ShipTeleporter __instance)
         {
             if (__instance.isInverseTeleporter && configRestrictInverseTeleporter.Value && !GameNetworkManager.Instance.isHostingGame)

@@ -15,8 +15,8 @@ namespace JammedControls.Patches
         internal class ShipTeleporterPatch
         {
             [HarmonyPatch(typeof(StartMatchLever), "PullLever")]
-            [HarmonyPostfix]
-            private static bool PullLeverPatch()
+            [HarmonyPrefix]
+            private static bool PullLeverPatch(StartMatchLever __instance)
             {
                 if (!GameNetworkManager.Instance.isHostingGame && configRestrictLever.Value)
                 {

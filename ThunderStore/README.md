@@ -1,0 +1,1 @@
+Restrict the teleporter buttons and/or lever to host only. KNOWN ISSUE: The lever stops working if its used by a client when host only is enabled, will be fixed in the next update.
